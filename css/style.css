@@ -15,7 +15,7 @@ html{
     font-size: 16px;
 }
 
-#popupDialog {
+#openDialog {
     display: none;
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
