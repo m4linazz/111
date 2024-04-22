@@ -1,0 +1,1423 @@
+.container {
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #FFDEE6;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-size: 16px;
+}
+
+#popupDialog {
+    display: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ec9ab6;
+    box-shadow:0 0 20px #ffffff;
+    z-index: 1000;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.btnClose {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    background: #f1a6bd;
+    border-radius: 10px;
+    box-shadow:0 0 20px #daa1b2;
+}
+
+.btnClose:hover {
+    -webkit-text-shadow: 1px 1px 1px #8F546B;
+    -moz-text-shadow: 1px 1px 1px #8F546B;
+    text-shadow: 1px 1px 1px #8F546B;
+}
+.zero-page{
+    display: flex;
+    justify-content: center;
+    background: url(../images/head-photo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.top{
+    color: var(--white--);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+.logo {
+    margin: 0 auto;
+    scale:calc(0.95);
+}
+
+
+.block-menu {
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 70px;
+   background: #D495B3;
+   box-shadow:0 0 20px #ffffff;
+
+}
+
+.menu {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+
+.menu a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+}
+
+.menu a:hover{
+  color: #8f5482; 
+
+}
+.course {
+    margin: 0 auto;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-size: 4.9rem;
+    color: #8F546B;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.kotik {
+    margin-top: 2%;
+}
+
+.head-down2 {
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-down {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.text-head {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-head1 {
+    font-family: "Literata", serif;
+    color: #ffffff;
+    width: 100%;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.text-head2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    width: 95%;
+    color: #8F546B;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-b {
+    margin: 0 auto;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 0 15px 0 ;
+    background: url(../images/back1.jpg) center;
+    box-shadow:0 0 20px #daa1b2;
+    border-radius: 15px;
+}
+
+.text-form-b1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #8F546B;
+}
+
+.text-form-b2 {
+    font-family: "Literata", serif;
+    color: #ffffff;
+    font-size: 1.7rem;
+    margin-top: 3%;
+}
+
+.text-form-b3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #8F546B;
+}
+
+.button1 {
+   margin-top: 4%;
+   margin-bottom: 1%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width:200px;
+   height: 60px;
+   background: #F4B0B9;
+   border-radius: 10px;
+   box-shadow:0 0 20px #daa1b2;
+}
+
+.button1:hover {
+    background: #c5828b;
+    transition: 0.5s linear
+}
+
+.button1 a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button1 a:hover { 
+    -webkit-text-shadow: 1px 1px 1px #8F546B;
+    -moz-text-shadow: 1px 1px 1px #8F546B;
+    text-shadow: 1px 1px 1px #8F546B;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+}
+
+.title-block {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70px;
+    background: #F4CBD3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2.1rem;
+    color: #8F546B;
+    text-align: center;
+ }
+
+ .main-block {
+    display: flex;
+    justify-content: center;
+    background: url(../images/back2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 10px; 
+ }
+
+ .course-blocks {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ .course-block {
+    margin: 0 auto;
+    background-color: #f0b5c7;
+    box-shadow:0 0 20px #daa1b2;
+    display: flex;
+    align-items: center;
+    padding: 1.5%;
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    transition: 0.5s linear
+ }
+
+ .course-block:hover {
+    background: #f39eb7;
+ }
+
+ .course-block-t1 {
+    margin: 0 auto;
+    position: relative;
+    font-family: "Marmelad", sans-serif;
+    font-weight: 400;
+    color:#ffffff;
+    font-size: 1.9rem;
+ }
+
+.course-block-t2 {
+    position: relative;
+    font-family: "Marmelad", sans-serif;
+    font-weight: 400;
+    color:#ffffff;
+    font-size: 1.7rem;
+    text-align: center;
+    justify-content: center;
+}
+.course-block-t2:hover {
+    font-size: 0;
+}
+
+.course-block-t2:hover:after {
+    content: attr(data-hover);
+    font-size: 1.4rem;
+}
+
+ .icon {
+    margin: 0 auto;
+    position: absolute;
+    scale:calc(1.55);
+    opacity: 50%;
+ }
+
+.main-blocks-teachers {
+    margin: 0 auto;
+    margin-top: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2.1rem;
+    color: #8F546B;
+}
+
+.teachers {
+    margin: 0 auto;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-teacher {
+    margin: 0 auto;
+    width: 410px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+}
+
+.teachers-info1 {
+    font-family: "Literata", serif;
+    color: #8F546B;
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.teachers-info2 {
+    margin: 0 auto;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    color: #8F546B;
+    font-size: 1.45rem;
+    width: 85%;
+    margin-top: 1%;
+}
+
+.teacher-photo {
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow:0 0 20px #daa1b2;
+}
+
+.methods-page {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.methods {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../images/back3.png) center;
+    background-size: cover;
+}
+
+.method {
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.methods-blocks {
+    width: 90%;
+    margin: 0 auto;
+ }
+
+.method-name {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    width: 40%;
+    color: #8F546B;
+}
+
+.method-info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0b5c7;
+    box-shadow:0 0 20px #daa1b2;
+    align-items: center;
+    padding: 1.5%;
+    width: 47%;
+    height: 180px;
+    border-radius: 45%;
+    justify-content: center;
+}
+
+.method-info1 {
+    margin: 0 auto;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 800;
+    color: #8F546B;
+    font-size: 1.3rem;
+    width: 95%;
+}
+
+.method-info2 {
+    margin: 0 auto;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 500;
+    color: #8F546B;
+    font-size: 1.3rem;
+    width: 95%;
+}
+
+.form-page {
+    margin: 0 auto;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-titles {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 60%;
+    font-family: "Literata", serif;
+    color: #8F546B;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px 0 20px 0 ;
+    background: url(../images/back4.jpg) center;
+    box-shadow:0 0 20px #daa1b2;
+    border-radius: 15px;
+}
+
+.form-record {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-record input {
+    margin: 0 auto;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    outline: none;
+    border: none;
+    box-shadow:0 0 20px #daa1b2;
+    border-radius: 5px;
+}
+
+.form-record-label {
+    font-family: "Marmelad", sans-serif;
+    font-weight: 400;
+    color:#8F546B;
+    font-size: 2.1rem;
+}
+
+.news-page {
+    margin-top: 75px;
+}
+
+.news {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-news {
+    margin: 0 auto;
+    margin-top: 5%;
+    gap:2%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 60%;
+    height: 160px;
+    padding: 20px 0 20px 0 ;
+    background: url(../images/back5.jpg) no-repeat center;
+    box-shadow:0 0 20px #daa1b2;
+    border-radius: 15px;
+}
+
+.news-photo {
+    margin: 0 auto;
+    width: 95%;
+    padding: 15px 5px 15px 15px;
+}
+
+.news-text {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.news-title {
+    font-family: "Literata", serif;
+    color: #8F546B;
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+}
+
+.news-info {
+    margin-top: 2%;
+    font-family: "Literata", serif;
+    color: #6A4051;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.reviews-page {
+    margin-top: 75px;
+    width: 100%;
+}
+
+.reviews {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    margin-top: 3%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 360px;
+    padding: 20px 0 20px 0 ;
+    background: #F3C7C9;
+    box-shadow:0 0 20px #daa1b2;
+    border-radius: 15px;
+}
+
+.name-rew {
+    width: 88%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    gap:11%;
+}
+
+.ava-r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEA9C4;
+    box-shadow:0 0 20px #daa1b2;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:#ffffff;
+}
+
+.name-r {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:#55313F;
+}
+
+.text-r {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color:#6A4051;
+}
+
+.date-and-r {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.date-r {
+    display: flex;
+    justify-content: end;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color:#55313F;
+}
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    background: #D495B3;
+}
+
+.footer-blocks {
+    display: flex;
+    width: 80%;
+    height:250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-footer {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+}
+
+.title-info-footer {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+    font-size: 1.3rem;
+    color:#6A4051;
+}
+
+.info-footer-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color:#6A4051;
+    height: 140px;
+}
+
+.info-footer-block a {
+    text-decoration: none;
+    color:#6A4051;
+}
+
+.contact-footer {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color:#6A4051;
+}
+
+.links-apps {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-footer {
+    scale: calc(1.05);
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1200px) {
+   .reviews-page {
+        width: 80%;
+   }
+   .review {
+        margin-top: 6%;
+   }
+   .block-news {
+        width: 65%;
+   }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .menu a {
+        font-size: 1.5rem;
+   }
+   .course-block {
+     width: 390px;
+   }
+   .method-name {
+        width: 35%;
+   }
+   .method-info {
+        width: 57%;
+   }
+   .block-news {
+        width: 75%;
+   }
+   .form-b {
+        width: 55%;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+    .course-block {
+        width: 380px;
+      }
+    .text-head2 {
+        width: 100%;
+        font-size: 1.42rem;
+        margin-top: 20px;
+    }
+    .menu a {
+        font-size: 1.45rem;
+    }
+    .block-news {
+        width: 85%;
+    }   
+    .method-info1 {
+        font-size: 1.2rem;
+    }
+    .method-info2 {
+        font-size: 1.2rem;
+    }
+    .reviews-page {
+        width: 38.5%;
+    }
+    .review {
+        margin-top: 12%;
+    }
+    .course-block-t1 {
+        font-size: 1.8rem;
+    }
+    .course-block-t2 {
+        font-size: 1.6rem;
+    }
+    .form-b {
+        width: 60%;
+    }
+    .logo {
+        width: 11%;
+        scale:calc(0.90);
+    }
+    .menu {
+        width: 95%;
+    }
+    .name-r {
+        font-size: 1.37rem;
+    }
+    .text-r {
+        font-size: 1.12rem;
+    }
+    .title-info-footer {
+        font-size: 1.2rem;
+    }
+    .info-footer-block {
+        font-size: 1.1rem;
+    }
+    .form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-b {
+        width: 65%;
+    }
+    .course {
+        font-size: 4.2rem;
+    }
+    .text-head1 {
+        width: 100%;
+        font-size: 1.5rem;
+    }   
+    .text-head2 {
+        width: 100%;
+        font-size: 1.21rem;
+    }
+    .logo {
+        width: 12%;
+        scale:calc(0.88);
+    }
+    .menu a {
+        font-size: 1.3rem;
+    }
+    .menu {
+        width: 95%;
+    }
+    .course-block-t1 {
+        font-size: 1.6rem;
+    }
+    .course-block-t2 {
+        font-size: 1.4rem;
+    }
+    .name-r {
+        font-size: 1.35rem;
+    }
+    .text-r {
+        font-size: 1.1rem;
+    }
+    .reviews-page {
+        width: 43%;
+    }
+    .title-info-footer {
+        font-size: 1.1rem;
+    }
+    .info-footer-block {
+        font-size: 1rem;
+        height: 120px;
+    }
+    .logo-footer {
+        scale:calc(0.9)
+    }
+    .method-info1 {
+        font-size: 1.1rem;
+    }
+    .method-info2 {
+        font-size: 1.1rem;
+    }
+    .method-name {
+        font-size: 1.4rem;
+    }
+    .form {
+        width: 68%;
+    }
+    .links-apps {
+        scale:calc(0.9)
+    }
+    .info-footer {
+        width: 58%;
+    }
+    .news-title {
+        font-size: 1.3rem;
+    }
+    .news-info {
+        font-size: 1.1rem;
+    }
+    .news-img {
+        scale: calc(0.95);
+    }
+    .title-block {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .kotik {
+        width: 45%;
+        scale: calc(0.8);
+    }
+    .head-down2 {
+       width: 90%;
+       height: 100%;
+    }
+    .course {
+        width: 100%;
+        font-size: 3rem;
+    }
+    .text-head1 {
+        font-size: 1.3rem;
+    }   
+    .text-head2 {
+        font-size: 1.2rem;
+    }   
+    .course {
+        height: 90%;
+    }
+    .logo {
+        width: 14%;
+    }
+    .menu a {
+        font-size: 1.1rem;
+    }
+    .text-form-b1 {
+        font-size: 1.8rem;
+    }
+    .text-form-b2 {
+        font-size: 1.5rem;
+    }
+    .text-form-b3 {
+        font-size: 1.3rem;
+    }
+    .course-block-t1 {
+        font-size: 1.6rem;
+    }
+    .course-block-t2 {
+        font-size: 1.4rem;
+    }
+    .title-block {
+        font-size: 1.6rem;
+    }
+    .teachers-photo {
+        scale: calc(0.9);
+    }
+    .teachers-info1 {
+        font-size: 1.3rem;
+    }
+    .teachers-info2 {
+        font-size: 1.3rem;
+    }
+    .block-teacher {
+        height: 520px;
+    }
+    .method-info {
+        width: 60%;
+        height: 150px;
+    }
+    .method-name {
+        font-size:1.1rem;
+    }
+    .title-info-footer {
+        font-size: 1rem;
+    }
+    .info-footer-block {
+        font-size: 0.95rem;
+        height: 120px;
+    }
+    .logo-footer {
+        scale:calc(0.8)
+    }
+    .method-info1 {
+        font-size: 1rem;
+    }
+    .method-info2 {
+        font-size: 1rem;
+    }
+    .footer-blocks {
+        width: 95%;
+    }
+    .company-name {
+        font-size: 0.8rem;
+    }
+    .titles {
+        font-size: 1.9rem;
+    }
+    .reviews-page {
+        width: 51%;
+    }
+    .text-titles {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+   .menu a {
+        font-size: 0.95rem;
+   }
+   .logo {
+    scale:calc(0.7);
+    margin-left: -12px;
+    width: 14%;
+   }
+   .kotik {
+    scale: calc(0.7);;
+    width: 40%;
+   }
+   .text-form-b1 {
+    font-size: 1.6rem;
+    }
+    .text-form-b2 {
+        font-size: 1.3rem;
+    }
+    .text-form-b3 {
+        font-size: 1.1rem;
+    }
+    .button1 {
+        width:160px;
+        height: 40px;
+    }
+    .button1 a {
+        font-size: 1rem;
+    }
+    .title-block {
+        width: 80%;
+        font-size: 1.6rem;
+    }
+    .news-title {
+        font-size: 1.05rem;
+    }
+    .news-info {
+        font-size: 1rem;
+    }
+    .news-img {
+        width: 50%;
+        scale:calc(0.8);
+    }
+    .reviews-page {
+        width: 65%;
+    }
+    .logo-footer {
+        scale:calc(0.7);
+    }
+    .company-name {
+        font-size: 0.7rem;
+        margin-left: 20px;
+    }
+    .footer-blocks {
+        width: 100%;
+    }
+    .block-news {
+        height: 150px;
+    }
+    .form-record-label input {
+        height: 35px;
+    }
+    .form-record-label label {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-blocks {
+        width: 100%;
+    }
+    .logo-footer {
+        margin-top: -190px;
+        margin-left: -15px;
+        scale: calc(0.6);
+    }
+    .info-footer {
+        width: 320px;
+        margin-left: -70px;
+    }
+    .links-apps {
+        scale: calc(0.8);
+    }
+    .title-info-footer {
+        font-size: 0.95rem;
+    }
+    .info-footer-block {
+        font-size: 0.9rem;
+    }
+    .company-name {
+        margin-left: 25px;
+    }
+    .reviews-page {
+        width: 75%;
+    }
+    .block-news {
+        width: 95%;
+    }
+    .methods-blocks {
+        width: 100%;
+    }
+    .method-name {
+        font-size: 1rem;
+    } 
+    .method-info1 {
+        font-size: 0.87rem;
+    }
+    .method-info2 {
+        font-size: 0.87rem;
+    }
+    .method-info {
+        width: 60%;
+        height: 140px;
+    }
+    .course {
+        font-size: 2.6rem;
+    }
+    .kotik {
+        position: absolute;
+        margin-left: -40px;
+    }
+    .text-head {
+        position: relative;
+    } 
+    .menu {
+        position: relative;
+    }
+    .logo {
+        position: absolute;
+    }
+    .menu a {
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .title-block {
+        font-size: 1.3rem;
+    }
+    .text-form-b1 {
+        font-size: 1.4rem;
+    }
+    .text-form-b2 {
+        font-size: 1.1rem;
+    }
+    .text-form-b3 {
+        font-size: 0.9rem;
+    }
+    .block-menu {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info-footer-block {
+        width: 43px;
+    }
+    .links-apps {
+        scale: calc(0.7);
+        margin-left: -20px
+    }
+    .title-info-footer {
+        font-size: 0.95rem;
+    }
+    .info-footer-block {
+        font-size: 0.9rem;
+    }
+    .contact-footer{
+        width: 100px;
+    }
+    .company-name {
+        margin-bottom: -20px;
+        margin-left: -10px;
+    }
+    .method-info {
+        width: 60%;
+        height: 160px;
+    }
+    .method-name {
+        font-size:0.85rem;
+    }
+    .block-teacher {
+        margin-top: 10%;
+        width: 80%;
+    }
+    .titles {
+        font-size: 1.6rem;
+    }
+    .links-apps {
+        flex-direction: row;
+        margin-top: -45px;
+        margin-left: -180px;
+        scale: calc(0.8);
+    }
+    .app-footer {
+        margin-right: 20px;
+    }
+    .ava-r {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .name-r {
+        font-size: 1.15rem;
+    }
+    .reviews-page {
+        width: 80%;
+    }
+    .text-r {
+        font-size: 1rem;
+    }
+    .review {
+        height: 340px;
+    }
+    .news-title {
+        font-size: 1rem;
+    }
+    .news-info {
+        font-size: 0.8rem;
+    }
+    .news-img {
+        width: 60%;
+        scale:calc(0.8);
+    }
+    .form {
+        width: 80%;
+    }
+    .text-titles {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .method-name {
+        font-size: 0.88rem;
+    } 
+    .method-info1 {
+        font-size: 0.82rem;
+    }
+    .method-info2 {
+        font-size: 0.82rem;
+    }
+    .teachers-photo {
+        scale: calc(0.8);
+    }
+    .teachers-info1 {
+        font-size: 1.15rem;
+    }
+    .teachers-info2 {
+        font-size: 1.1rem;
+    }
+    .teachers-info {
+        margin-top: -30px;
+    }
+    .block-teacher {
+        margin-top: -45px;
+    }
+    .form-page {
+        margin-top: 60px;
+    }
+    .text-form-b1 {
+        font-size: 1.25rem;
+    }
+    .text-form-b2 {
+        font-size: 0.95rem;
+    }
+    .text-form-b3 {
+        font-size: 0.85rem;
+    }
+    .course {
+        font-size: 2.1rem;
+    }
+    .text-head1 {
+        font-size: 1.1rem;
+    }   
+    .text-head2 {
+        font-size: 0.9rem;
+    }
+    .kotik {
+        scale: calc(0.6); 
+    }
+    .menu a {
+        font-size: 0.75rem;
+    }
+    .block-menu {
+        height: 55px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .course {
+        font-size: 1.55rem;
+    }
+    .text-head1 {
+        font-size: 0.9rem;
+    }   
+    .text-head2 {
+        font-size: 0.8rem;
+    }
+    .kotik {
+        scale: calc(0.5); 
+    }
+    .menu a {
+        font-size: 0.57rem;
+    }
+    .block-menu {
+        height: 45px;
+    }
+    .logo {
+        scale: calc(0.6);
+    }
+    .titles {
+        font-size: 1.4em;
+    }
+    .title-block {
+        font-size: 1.2rem;
+    }
+    .text-form-b1 {
+        font-size: 1.1rem;
+    }
+    .text-form-b2 {
+        font-size: 0.9rem;
+    }
+    .text-form-b3 {
+        font-size: 0.8rem;
+    }
+    .button1 {
+        scale:calc(0.8);
+    }
+    .form-b {
+        width: 78%;
+    }
+    .course-block-t1 {
+        font-size: 1.3rem;
+    }
+    .course-block-t2 {
+        font-size: 1.1rem;
+    }
+    .course-block-t2:hover:after {
+        font-size: 1.1rem;
+    }
+    .block-teacher {
+        width: 100%;
+    }
+    .teachers-photo {
+        scale:calc(0.7);
+    }
+    .teachers-info1 {
+        font-size: 1.05rem;
+    }
+    .teachers-info2 {
+        font-size: 1rem;
+    }
+    .method-name {
+        font-size: 0.65rem;
+    } 
+    .method-info1 {
+        font-size: 0.72rem;
+    }
+    .method-info2 {
+        font-size: 0.72rem;
+    }
+    .form-record-label input {
+        width: 200px;
+    }
+    .form-record-label label {
+        font-size: 1.5rem;
+    }
+    .news-title {
+        font-size: 0.8rem;
+    }
+    .news-info {
+        font-size: 0.7rem;
+    }
+    .news-img {
+        scale:calc(0.85);
+    }
+    .name-r {
+        font-size: 1.05rem;
+    }
+    .reviews-page {
+        width: 80%;
+    }
+    .text-r {
+        font-size: 0.9rem;
+    }
+    .reviews-page {
+        width: 85%;
+    }
+    .form-b {
+        margin-top: 40px;
+    }
+    .courses {
+        margin-top: -25px;
+    }
+    .teachers {
+        margin-top: 40px;
+    }
+    .block-teacher {
+        height: 440px;
+    }
+    .teachers-info {
+        margin-top: -50px;
+    }
+    .teachers-info1 {
+        font-size: 1rem;
+    }
+    .teachers-info2 {
+        font-size: 0.95rem;
+    }
+}
